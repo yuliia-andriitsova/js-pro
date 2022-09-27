@@ -153,6 +153,12 @@
                 border-radius: 9px;
                 margin-top: 1px;
                 margin-left: 1px;
+                &.ball-left {
+                    margin-left: 1px;
+                }
+                &.ball-right {
+                    transform: translateX(20px);
+                }
             }
         }
         
