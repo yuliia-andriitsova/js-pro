@@ -131,7 +131,7 @@
         align-items: center;
         gap: 12px;
 
-        &__text {
+        &-text {
             font-weight: 400;
             font-size: 18px;
             line-height: 1.33;
@@ -146,7 +146,7 @@
             background: #FFFFFF;        
             border: 0.604701px solid #FD5103;
             border-radius: 10px;
-            &-boll {
+            &-ball {
                 height: 16px;
                 width: 16px;
                 background-color: #FD5103;

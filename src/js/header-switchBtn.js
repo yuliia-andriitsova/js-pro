@@ -1,9 +1,9 @@
 const refs = {
   body: document.querySelector('body'),
   switchBtn: document.querySelector('.header__color-theme-box__switch'),
-  switchBall: document.querySelector('.header__color-theme-box__switch-boll'),
-  textLight: document.querySelector('.header__color-theme-box__text--light'),
-  textDark: document.querySelector('.header__color-theme-box__text--dark'),
+  switchBall: document.querySelector('.header__color-theme-box__switch-ball'),
+  textLight: document.querySelector('.header__color-theme-box-text--light'),
+  textDark: document.querySelector('.header__color-theme-box-text--dark'),
 };
 
 refs.switchBtn.addEventListener('click', inHeaderOnClickSwitchThemeButton);
