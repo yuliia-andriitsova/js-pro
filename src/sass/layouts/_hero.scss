@@ -14,18 +14,18 @@
 }
 
 .hero__list {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.91;
-  color: #fd5103;
-  @media screen and(min-width:768px) {
+  @include mobile {
+    color: $colorFontPrimary;
+    @include fonts($fs: 22px, $lh: 42px);
+  }
+
+  @include tablet {
+    @include fonts($fs: 26px, $lh: 42px);
     font-size: 26px;
     line-height: 1.62;
   }
 
-  @media screen and(min-width:1200px) {
+  @include desktop {
     font-size: 52px;
     line-height: 1.54;
   }
