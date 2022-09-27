@@ -1,13 +1,17 @@
 .hero {
-  background: #d9d9d9;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  @media screen and(min-width:768px) {
+  @include mobile {
+    background-color: $colorBackgroundDay;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  @include tablet {
+    display: flex;
     padding-top: 70px;
     padding-bottom: 60px;
   }
-
-  @media screen and(min-width:1200px) {
+  @include desktop {
     padding-top: 30px;
     padding-bottom: 60px;
   }
@@ -24,21 +28,29 @@
   }
 
   @include desktop {
-    font-size: 52px;
-    line-height: 1.54;
+    @include fonts($fs: 52px, $lh: 80px);
   }
 }
 
 .hero__search {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.02em;
-  color: #000000;
-  opacity: 0.8;
+  @include mobile {
+    @include fonts($fw: 500, $fs: 14px, $lh: 28px);
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+  }
+  @include tablet {
+    bottom: 55%;
+  }
+  @include desktop {
+    @include fonts($fs: 18px, $lh: 28px);
+    bottom: 55%;
+  }
 }
 .img__cocktail {
-  width: 100%;
+  @include mobile {
+    position: relative;
+  }
 }
