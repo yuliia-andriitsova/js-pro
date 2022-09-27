@@ -21,8 +21,6 @@
 
   @include tablet {
     @include fonts($fs: 26px, $lh: 42px);
-    font-size: 26px;
-    line-height: 1.62;
   }
 
   @include desktop {
