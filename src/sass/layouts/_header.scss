@@ -127,7 +127,6 @@
         @media screen and (max-width: 1279px) {
             display: none;
         }
-
         display: flex;
         align-items: center;
         gap: 12px;
@@ -140,12 +139,22 @@
             color: #5F6775;
             ;
         }
-
-        &__checkbox {
-            display: none;
+        &__switch {
+            position: relative;
             width: 40px;
-            background-color: red;
-            border: 1px solid black;
+            height: 20px;
+            background: #FFFFFF;        
+            border: 0.604701px solid #FD5103;
+            border-radius: 10px;
+            &-boll {
+                height: 16px;
+                width: 16px;
+                background-color: #FD5103;
+                border-radius: 9px;
+                margin-top: 1px;
+                margin-left: 1px;
+            }
         }
+        
     }
 }
