@@ -51,6 +51,7 @@
       display: flex;
       // margin-left: auto;
       margin-left: 43px;
+      align-items: flex-end;
     }
 
     &-list {
@@ -149,6 +150,10 @@
         position: absolute;
       }
     }
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   // &__logo-link {
@@ -199,6 +204,7 @@
       position: absolute;
       margin: 0;
       height: 40px;
+      right: 336px;
     }
 
     &--menu {
@@ -259,6 +265,12 @@
   }
 
   &__color-theme-box {
+    @include desktop {
+      position: absolute;
+      right: 16px;
+      top: 10px;
+    }
+
     &--menu {
 
 
@@ -355,7 +367,7 @@
       // background-color: tomato;
       display: flex;
       height: 45px;
-      margin-left: 188;
+      margin-left: 199;
     }
   }
 
@@ -364,7 +376,7 @@
   }
 
   &__favorite-box {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     width: 210px;
     height: 96px;
@@ -372,6 +384,11 @@
     border-radius: 4px;
     left: 357px;
     top: 71px;
+
+    @include desktop {
+      left: 346px;
+      position: absolute;
+    }
 
     @media screen and (max-width: 1279px) {
       top: 230px;
