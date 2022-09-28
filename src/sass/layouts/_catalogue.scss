@@ -236,13 +236,11 @@
   @include desktop {
     @include fonts($ff: 'Roboto', $fw: 900, $fs: 32px, $lh: 38px);
   }
-}
 
   @include desktop {
     @include fonts($ff: 'Roboto', $fw: 900, $fs: 32px, $lh: 38px);
   }
 }
-
 
 .catalogue__btn {
   display: flex;
@@ -259,28 +257,18 @@
   }
 }
 
-
-
 .catalogue__ingredient {
- margin-left: 20px;
- margin-right: 20px;
- 
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .catalogue__textfav {
-    @include fonts($ff: 'Poppins',
-        $ffs: normal,
-        $fw: 600,
-        $fs: 14px,
-        $lh: 21px);
-        
+  @include fonts($ff: 'Poppins', $ffs: normal, $fw: 600, $fs: 14px, $lh: 21px);
+
   @include tablet {
     @include fonts($ff: 'Poppins', $fw: 600, $fs: 16px, $lh: 24px);
     padding-top: 28px;
   }
-
-  
-        
 }
 .catalogue__list {
   @include tablet {
