@@ -157,7 +157,7 @@
 
     @include tablet {
       top: 12px;
-    right: 12px;
+      right: 12px;
     }
   }
 
@@ -176,30 +176,67 @@
 }
 
 .catalogue__title {
-    @include fonts($ff: Poppins,
-        $ffs: normal,
-        $fw: 600,
-        $fs: 22px,
-        $lh: 42px);
-    text-align: center;
+  @include fonts($ff: Poppins, $ffs: normal, $fw: 600, $fs: 22px, $lh: 42px);
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include tablet {
+    @include fonts($ff: Poppins, $ffs: normal, $fw: 700, $fs: 32px, $lh: 42px);
+    margin-bottom: 56px;
+  }
+
+  @include desktop {
+    @include fonts($ff: Poppins, $ffs: normal, $fw: 700, $fs: 48px, $lh: 72px);
     margin-bottom: 60px;
-    }
-
-
-
-.catalogue__description {
-padding-top: 48px;
-    padding-bottom: 24px;
-    text-align: center;
+  }
 }
 
-.catalogue__textfaving {
+.catalogue__item {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #fd5103;
+  max-width: 479px;
+  margin-bottom: 20px;
+  @include tablet {
+    max-width: 335px;
+  }
+  // @include desktop {
+  //   max-width: 395px;
+  // }
+}
+
+.catalogue__list {
+  @include tablet {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.catalogue__img {
+  width: 100%;
+  @include tablet {
+    max-width: 335px;
+  }
+}
+
+.catalogue__description {
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.catalogue__text {
   @include fonts($ff: 'Roboto', $fw: 900, $fs: 26px);
+  padding-top: 48px;
 
   @include tablet {
     @include fonts($ff: 'Roboto', $fw: 900, $fs: 28px, $lh: 33px);
     padding-top: 20px;
   }
+
+  @include desktop {
+    @include fonts($ff: 'Roboto', $fw: 900, $fs: 32px, $lh: 38px);
+  }
+}
 
   @include desktop {
     @include fonts($ff: 'Roboto', $fw: 900, $fs: 32px, $lh: 38px);
