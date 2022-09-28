@@ -44,7 +44,7 @@
       </ul>
     </nav>
     <div class="header__input-box header__input-box--menu">
-      <form action="">
+      <form class="header__search-form" id="header__search-form">
         <button class="header__input-button">
           <img
             src="./images/header/bx_search.svg"
@@ -52,7 +52,13 @@
             class="header__input-icon"
           />
         </button>
-        <input class="header__input-text" type="text" placeholder="Search" />
+        <input
+          class="header__input-text"
+          name="header__input"
+          type="text"
+          placeholder="Search"
+          autocomplete="off"
+        />
       </form>
     </div>
     <div class="header__color-theme-box header__color-theme-box--menu">
