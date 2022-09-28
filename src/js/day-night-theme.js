@@ -11,7 +11,7 @@ const refsTheme = {
   ),
   paragraphText: document.querySelectorAll('p'),
 
-  headerText: document.querySelector('h'),
+  headerText: document.querySelector('h1'),
 };
 
 refsTheme.themeBox.addEventListener('click', changeThemeOnClick);
