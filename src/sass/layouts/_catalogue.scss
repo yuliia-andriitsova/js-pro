@@ -185,11 +185,7 @@
     margin-bottom: 60px;
     }
 
-.catalogue__card {
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid #FD5103;
-}
+
 
 .catalogue__description {
 padding-top: 48px;
@@ -197,16 +193,71 @@ padding-top: 48px;
     text-align: center;
 }
 
-.catalogue__text {
-    @include fonts($ff: 'Roboto',
-            $fw: 900,
-            $fs: 26px);
+.catalogue__textfaving {
+  @include fonts($ff: 'Roboto', $fw: 900, $fs: 26px);
+
+  @include tablet {
+    @include fonts($ff: 'Roboto', $fw: 900, $fs: 28px, $lh: 33px);
+    padding-top: 20px;
+  }
+
+  @include desktop {
+    @include fonts($ff: 'Roboto', $fw: 900, $fs: 32px, $lh: 38px);
+  }
 }
+
 
 .catalogue__btn {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    padding-top: 16px;
+  display: flex;
+  gap: 12px;
+
+  justify-content: space-around;
+  padding-top: 16px;
+  @include tablet {
+    padding-top: 25px;
+    gap: 16px;
+  }
+  @include desktop {
+    padding-top: 27px;
+  }
 }
 
+
+
+.catalogue__ingredient {
+ margin-left: 20px;
+ margin-right: 20px;
+ 
+}
+
+.catalogue__textfav {
+    @include fonts($ff: 'Poppins',
+        $ffs: normal,
+        $fw: 600,
+        $fs: 14px,
+        $lh: 21px);
+        
+  @include tablet {
+    @include fonts($ff: 'Poppins', $fw: 600, $fs: 16px, $lh: 24px);
+    padding-top: 28px;
+  }
+
+  
+        
+}
+.catalogue__list {
+  @include tablet {
+    display: flex;
+    gap: 32px;
+  }
+}
+.catalogue__item {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #fd5103;
+  max-width: 479px;
+  padding-bottom: 20px;
+  @include tablet {
+    max-width: 335px;
+  }
+}
