@@ -137,6 +137,9 @@
       align-items: center;
       color: #5f6775;
     }
+    &-text--light {
+      color: $colorFontPrimary;
+    }
     &__switch {
       position: relative;
       width: 40px;
